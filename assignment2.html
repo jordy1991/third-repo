@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Jordy Duits" />
+  <title>Growth and Development: Assignment 2 Lewis model in LaTeX Document</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Growth and Development: Assignment 2<br />
+Lewis model in LaTeX Document</h1>
+<h2 class="author">Jordy Duits</h2>
+</div>
+<p><strong>a. The Lewis model assumes that a fixed fraction of profits is reinvested; the Solow model assumes that a fixed fraction of total income is reinvested. Let’s compare the two assumptions: How does the Lewis model change if the Solow assumption about savings rates is used? Show the dynamics of the models.</strong><br />
+<br />
+The model, consisting of <strong>two sectors</strong>:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"></th>
+<th align="center"><span class="math inline">\(Subsistence Sector\)</span></th>
+<th align="center"><span class="math inline">\(Modern Sector\)</span></th>
+<th align="center">Total Economy</th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(output\)</span></td>
+<td align="center"><span class="math inline">\(Y_s=A_sL_s\)</span></td>
+<td align="center"><span class="math inline">\(Y_m=A_mK^{a}_mL_m^{1-a}\)</span></td>
+<td align="center"><span class="math inline">\(Y=Y_s+Y_m\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(wages\)</span></td>
+<td align="center"><span class="math inline">\(w_s=A_s\)</span></td>
+<td align="center"><span class="math inline">\(w_m= \frac{(1-a)Y_m}{L_m}\)</span></td>
+<td align="center"><span class="math inline">\(w_m={\varphi}w_s\)</span></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>And the <strong>labour market equilibrium</strong> is: <span class="math inline">\(L=L_s+L_m\)</span><br />
+With the corresponding <strong>capital accumulation function</strong>: <span>K</span>= <span class="math inline">\(s_yY-{\delta}K\)</span><br />
+We can derive <span class="math inline">\(L_m\)</span> in equilibrium as a function of parameters:<br />
+Because <span class="math inline">\(w_m={\varphi}w_s\)</span> <span class="math display">\[\begin{aligned}
+\frac{(1-a)Y_m}{L_m} &amp; = {\varphi}A_s       \\
+(1-a)A_mK_m^aL^{-a}_m &amp; = {\varphi}A_s  \\
+L^{-a}_m &amp; = \frac{{\varphi}A_s}{(1-a)A_mK^a_m} \\
+L^{a}_m &amp; = (\frac{(1-a)A_mK^a_m}{{\varphi}A_s})\\
+L_m &amp; = (\frac{(1-a)A_mK^a_m}{{\varphi}A_s})^{\frac{1}{a}}\\
+L_m &amp; = (\frac{(1-a)A_m}{{\varphi}A_s})^{\frac{1}{a}}K_m \end{aligned}\]</span> In the mature economy: <span class="math inline">\(L_m=L\)</span>, with a corresponding capital level at the start of the maturity level of <span class="math inline">\(K\)</span>:<br />
+<span class="math display">\[\begin{aligned}
+L &amp; = (\frac{(1-a)A_m}{{\varphi}A_s})^{\frac{1}{a}}K    \\
+K &amp; = L(\frac{{\varphi}A_s}{(1-a)A_m})^{\frac{1}{a}}K \end{aligned}\]</span> As output in the economy is: <span class="math display">\[\begin{aligned}
+Y &amp; = Y_s + Y_m     \\
+&amp; = A_sL_s + A_mK^a_mL^{1-a}_m      \\
+&amp; = A_s(L-L_m) = A_mK^a_m(\frac{LK}{K})^{1-a}       \\
+&amp; = A_sL + (\frac{{\varphi}-1+a}{1-a} (\frac{A_sL}{K}))K        \\\end{aligned}\]</span> This result is the same as in the Lewis model. In both models, the marginal product of capital is constant and we still have an AK-like growth model as an increase in capital still attracts labor to the modern sector.<br />
+However the transition dynamics for capital change:<br />
+<span>K</span> = <span class="math inline">\(\frac{s_yY-{\delta}K}{K}\)</span> = <span class="math inline">\(\frac{s_y(A_sL+(\frac{{\varphi}-1+a}{1-a}(\frac{A_sL}{K}))K)}{K} -{\delta}\)</span>=<span class="math inline">\(s_y(\frac{A_s}{k}+\frac{{\varphi}-1+a}{1-a}\frac{A_sL}{K})-{\delta}\)</span> where <span class="math inline">\(k=\frac{K}{L}\)</span><br />
+<span>Ŷ</span> <span class="math inline">\(= (1-\frac{A_sL}{Y})\)</span><span>K</span><br />
+Thus, capital accumulation differs considerably under the assumption that savings are now a fixed part of total output, instead of a fixed part of the capitalists’ profits (Lewis’ assumption).<br />
+Under Lewis’ assumption, we had that:<br />
+<span>K</span> = <span class="math inline">\(s_{\pi}aA_m({\frac{L}{K}})^{1-a} - \delta \)</span><br />
+<span>Ŷ</span> <span class="math inline">\(= (1-\frac{A_sL}{Y})\)</span><span>K</span><br />
+In the Lewis model with the Solow savings assumption, we see that capital accumulation firstly depends on the savings over total output. So not only capital owners, also labor can provide savings (households in general). Consequently, capital accumulation also depends on savings in the subsistence sector. This is visible in the capital accumulation equation where also <span class="math inline">\(A_s\)</span> is an important parameter now. However, the speed of capital growth decreases with a larger K (first term of the equation), though it always stays positive even if K <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(\infty\)</span> (due to the positive second term <span class="math inline">\(({\varphi}+ a &gt;1))\)</span>.<br />
+<br />
+<br />
+<strong>b.Unified growth: from Lewis to Solow. Show the dynamics of an economy that starts with small capital stock and surplus labor and show how it can finally reach the “mature stage” where the economy behaves like the Solow model. Show how the dynamics of the two regimes are linked.</strong><br />
+<br />
+<strong>Modelling in Excel</strong><br />
+We modelled this economy in excel, to check its development over 50 periods. To do so, values for the parameters are needed. The values for obtained from the paper of Mankiw, Romer and Weil (1992), or some realistic numbers are chosen. The values are summarized in table 1. Also initial values <span class="math inline">\(K_0\)</span> and <span class="math inline">\(L_0\)</span> are summarized in this table.<br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span>L</span></th>
+<th align="center"><span>Â</span><span class="math inline">\(_s\)</span></th>
+<th align="center"><span>Â</span><span class="math inline">\(_m\)</span></th>
+<th align="center">s<span class="math inline">\(_\pi\)</span></th>
+<th align="center"><span class="math inline">\(\varphi\)</span></th>
+<th align="center"><span class="math inline">\(a\)</span></th>
+<th align="center"><span class="math inline">\(\delta\)</span></th>
+<th align="center"><span class="math inline">\(K_0\)</span></th>
+<th align="center"><span class="math inline">\(L_0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.01</td>
+<td align="center">0.001</td>
+<td align="center">0.02</td>
+<td align="center">0.25</td>
+<td align="center">1.2</td>
+<td align="center">0.33</td>
+<td align="center">0.03</td>
+<td align="center">50</td>
+<td align="center">100</td>
+</tr>
+</tbody>
+</table>
+<p>Based on these values, we expect the following to happen in this economy over time:<br />
+<br />
+<em>Output and capital growth</em>: In the Lewis era, the growth rate of capital and output are expected to increase fast as profits leads the modern sector to grow at an increasing pace, while the modern sector is extracting labor from the subsistence sector.<br />
+Arriving in the Solow era, we expect the growth rates of output and capital to converge to, and will eventually arrive at, the long-run (steady state) expected growth rates:<br />
+<span>K</span> = <span>Ŷ</span> = <span class="math inline">\((\frac{1}{1-a})\)</span><span>Â</span> +<span>L</span> = <span class="math inline">\((\frac{1}{1-0.33})0.02 +0.01 = 4\)</span>%<br />
+<br />
+<em>Wages and profits growth</em>: In the Lewis era, all wages cannot grow faster than the marginal productivity of labor in the subsistence sector (<span class="math inline">\(A_s\)</span>), which grows as a pace of 0.1% per year. If wages of the modern sector tend to rise faster than subsistence sector wages, labor flows to the modern sector, reducing the MPL in the modern sector, thereby taking away the upward pressure on wages. This leads to a very fast growth of profits, as capital productivity grows at a very high pace, stimulated by these labor inflows from the subsistence sector.<br />
+From off the Solow era, there is no labor inflow in the modern sector from a subsistence sector, so that the marginal product of labor increases at a faster pace, and so do wages. As capital grows initially very fast, wages also grow very fast in the beginning of the Solow era. In the long run, as capital increases at its long-run level, wages (which are equal to <span class="math inline">\((1-a)A(k)^{{\ast}a} =(1-a)y^{\ast}\)</span> will increase at the rate:<br />
+<span>ŵ</span> <span class="math inline">\(= (1−a)gy^{\ast}= (1−a)((\frac{1}{1-a}\)</span><span>Â</span>) = <span class="math inline">\((\frac{1}{1-0.33})0.02 = 3\%\)</span>.<br />
+As a result, due to faster wage growth, profit growth will decline. As <span class="math inline">\(\pi=aY\)</span>, long-run profit growth is equal to <span>â</span> + <span>Ŷ</span> = <span>Ŷ</span>, which is equal to 4% here.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Let’s run the model:<br />
+<em>Output and Capital over time:</em><br />
+</p>
+<p><img src="graph1.png" alt="image" /><br />
+</p>
+<p><img src="graph2.png" alt="image" /><br />
+</p>
+<p><em>Wages and profits over time:</em><br />
+</p>
+<p><img src="graph3.png" alt="image" /></p>
+</body>
+</html>
